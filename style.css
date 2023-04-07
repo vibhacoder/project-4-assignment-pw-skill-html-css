@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fame_cantainer{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+
+}
+
+
+
+
+ .fame1,.fame2,.fame3,.fame4,.fametop{
+                
+                 border: 2px soild black;
+                 width: 50vw;
+                 height: 50vh;
+                 border-radius:21px;
+                 margin-top:120px ;
+               }
+.fame1 , .fame2 , .fame3 , .fame4,.fametop {
+      display: none;
+}
+/* resposive website  */
+@media screen and (min-width:0px) {
+              .fametop{
+                display: block;
+                background-color: aquamarine;
+              }
+}
+
+@media screen and (max-width:1440px) {
+               .fametop{
+                 display:none;
+               }
+              .fame1{
+                display: block;
+                background-color: darkgreen;
+              }
+}
+
+@media screen and (max-width:1024px) {
+               .fame1,.fametop{
+                display: none;
+               }
+               .fame2{
+                display: block;
+                background-color:darkgoldenrod;
+               }
+}
+
+@media screen and (max-width:768px) {
+               .fame1,.fametop,.fame2{
+                display: none;
+               }
+               .fame3{
+                display: block;
+                background-color:aqua;
+               }
+}
+
+@media screen and (max-width:425px) {
+               .fame1,.fametop,.fame2,.fame3{
+                display: none;
+               }
+               .fame4{
+                display: block;
+                background-color:crimson;
+               }
+}
+
